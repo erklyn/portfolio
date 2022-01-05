@@ -2,10 +2,10 @@
 /* font-family: 'PT Sans Narrow', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 :root {
-    --primaryColor: #012840 ;
-    --seconderyColor: #0F4C59 ;
-    --accentColor: #5BA691;
-    --seconderyAccentColor: #A9D9CB;
+    --primaryColor: #d7f1e8 ;
+    --seconderyColor: #8260c0 ;
+    --accentColor: #2d213e;
+    --seconderyAccentColor: #39354e;
     --fontSize: 1.3rem;
     --Pt-Sans: 'PT Sans Narrow', sans-serif;
     --poppins: 'Poppins' , sans-serif;
@@ -15,6 +15,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *::before,
@@ -29,7 +30,7 @@ body{
     font-family: var(--poppins);
     color: var(--seconderyAccentColor);
     font-size: var(--fontSize);
-    font-weight: 100;
+    font-weight: 500;
 }
 
 h1,h2,h3{
@@ -79,11 +80,11 @@ h1,h2,h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--primaryColor);
+    color: var(--accentColor);
     background-color: var(--projectsbgc);
 }
 .technology{
-    color: var(--primaryColor);
+    color: var(--accentColor);
     text-align: start;
     font-weight: 500;
     display: flex;
@@ -168,7 +169,7 @@ nav li:first-child {
     display: block;
 }
 .navbar-items a:hover{ 
-    color: var(--accentColor);
+    color: var(--seconderyColor);
 }
 .navbar-items h1 a {
     font-family: var(--Pt-Sans);
@@ -183,15 +184,15 @@ nav li:first-child {
 }
 
 .resume:hover{
-    color:var(--primaryColor);
-    background-color: var(--accentColor);
+    color:var(--projectsbgc);
+    background-color: var(--seconderyColor);
 }
 
 footer{
     padding-top: 4rem;
     text-align: center;
     font-weight: 500;
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     flex-direction: column;
